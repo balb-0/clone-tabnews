@@ -9,10 +9,16 @@ export default function Home() {
     setPosition({ top: randomTop, left: randomLeft });
   };
 
+  const windowAlert = () => {
+    const alertaTela = window.alert("Vamos sair então! :)");
+  };
+
   return (
     <div style={styles.container}>
       <h1 style={styles.title}>Quer sair comigo essa semana?</h1>
-      <button style={styles.button1}>Sim</button>
+      <button style={styles.button1} onMouseDown={windowAlert}>
+        Sim
+      </button>
       <button
         style={{ ...styles.button2, ...styles.movingButton, ...position }}
         onMouseEnter={handleMouseEnter}
