@@ -5,3 +5,5 @@ node_modules
 
 # Ignorar diretórios de build e cache do Next.js
 .next/
+
+.vscode/
